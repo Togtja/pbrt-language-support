@@ -18,12 +18,12 @@
 				},
 				{
 					"name": "entity.name.class.pbrt",
-					"match": "\\b(Material|Shape|Camera|Film|Sampler|Integrator|LightSource|Include|Texture|AreaLightSource)\\b"
+					"match": "\\b(Material|Shape|Camera|Film|Sampler|Integrator|LightSource|Include|Texture|AreaLightSource|Aggregate|Filter|MakedNamedMedium|MediumInterface|MakeNamedMaterial|NamedMaterial)\\b"
 				}
 				,
 				{
 					"name": "entity.name.function.pbrt",
-					"match": "\\b(LookAt|CoordSysTransform|Translate|Rotate|Identity|Scale|CoordinateSystem|ConcatTransform|ReverseOrientation|MakedNamedMedium|MediumInterface|MakeNamedMaterial|NamedMaterial)\\b"
+					"match": "\\b(LookAt|CoordSysTransform|Translate|Rotate|Identity|Scale|CoordinateSystem|ConcatTransform|ReverseOrientation)\\b"
 				},
 				{
 					"name":"comment.line.number-sign.pbrt",
