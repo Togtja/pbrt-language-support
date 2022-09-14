@@ -9,17 +9,48 @@
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onLanguage:pbrt"
+  ],
+  "main": "./out/extension.js",
   "contributes": {
-    "languages": [{
-      "id": "pbrt",
-      "aliases": ["pbrt", "pbrt"],
-      "extensions": [".pbrt"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pbrt",
-      "scopeName": "source.pbrt",
-      "path": "./syntaxes/pbrt.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "pbrt",
+        "aliases": [
+          "pbrt-v3",
+          "pbrt-v4",
+          "pbrt"
+        ],
+        "extensions": [
+          ".pbrt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pbrt",
+        "scopeName": "source.pbrt",
+        "path": "./syntaxes/pbrt.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.71.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.13.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "vscode": "^0.9.9"
   }
 }
