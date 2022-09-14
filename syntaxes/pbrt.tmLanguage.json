@@ -17,12 +17,12 @@
 					"match": "\\b(.*Begin|.*End)\\b"
 				},
 				{
-					"name": "entity.name.class",
-					"match": "\\b(Material|Shape|Camera|Film|Sampler|Integrator|LightSource)\\b"
+					"name": "entity.name.class.pbrt",
+					"match": "\\b(Material|Shape|Camera|Film|Sampler|Integrator|LightSource|Include)\\b"
 				}
 				,
 				{
-					"name": "entity.name.function",
+					"name": "entity.name.function.pbrt",
 					"match": "\\b(LookAt|CoordSysTransform|Translate|Rotate|Identity|Scale|CoordinateSystem|ConcatTransform)\\b"
 				},
 				{
