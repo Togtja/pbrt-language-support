@@ -2,13 +2,18 @@
   "name": "pbrt-language-support",
   "displayName": "pbrt Language Support",
   "description": "Language support for .pbrt files",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "publisher": "TomasBerger",
   "engines": {
     "vscode": "^1.71.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Togtja/pbrt-language-support.git"
+  },
   "activationEvents": [
     "onLanguage:pbrt"
   ],
@@ -48,9 +53,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "eslint": "^8.13.0",
-    "typescript": "^4.7.2"
+    "typescript": "^4.8.3"
   },
-  "dependencies": {
-    "vscode": "^0.9.9"
-  }
+  "dependencies": {}
 }
