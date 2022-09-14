@@ -23,7 +23,13 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"],
-        ["AttributeBegin", "AttributeEnd"]
-    ]
+        ["'", "'"]
+    ],
+    "folding": {
+        "markers": {
+          "start": "^\\s*(.*Begin)\\b",
+          "end": "^\\s*(.*End)\\b"
+        }
+    },
+
 }

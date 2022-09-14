@@ -11,10 +11,25 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.pbrt",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.pbrt",
+					"match": "\\b(.*Begin|.*End)\\b"
+				},
+				{
+					"name": "entity.name.class",
+					"match": "\\b(Material|Shape|Camera|Film|Sampler|Integrator|LightSource)\\b"
+				}
+				,
+				{
+					"name": "entity.name.function",
+					"match": "\\b(LookAt|CoordSysTransform|Translate|Rotate|Identity|Scale|CoordinateSystem|ConcatTransform)\\b"
+				},
+				{
+					"name":"comment.line.number-sign.pbrt",
+					"match": "(#).*$\\n?"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.pbrt",
@@ -28,5 +43,5 @@
 			]
 		}
 	},
-	"scopeName": "text.pbrt"
+	"scopeName": "source.pbrt"
 }

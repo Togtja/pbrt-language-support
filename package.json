@@ -1,7 +1,7 @@
 {
   "name": "pbrt-language-support",
-  "displayName": "pbrt-language-support",
-  "description": "Language support for pbrt files",
+  "displayName": "pbrt Language Support",
+  "description": "Language support for .pbrt files",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
@@ -18,7 +18,7 @@
     }],
     "grammars": [{
       "language": "pbrt",
-      "scopeName": "text.pbrt",
+      "scopeName": "source.pbrt",
       "path": "./syntaxes/pbrt.tmLanguage.json"
     }]
   }
